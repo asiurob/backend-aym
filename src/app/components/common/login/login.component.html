@@ -1,0 +1,18 @@
+<div class="inner">
+    <div class="row">
+        <div class="col-md-4 offset-md-4 panel mt-5">
+            <div class="text-center mb-3">
+                <img src="../../../../assets/images/logo.png" class="rounded img256" alt="EZ-CRM">
+            </div>
+            <form ngNativeValidate [formGroup]="form" (ngSubmit)="login()">
+                <label class="font-weight-bold">Usuario</label>
+                <input type="text" class="form-control form-control-sm mt-1 mb-1" 
+                placeholder="Usuario o correo electrónico" required formControlName="user">
+                <label class="font-weight-bold">Contraseña</label>
+                <input type="password" class="form-control form-control-sm mt-1 mb-2" 
+                placeholder="Contraseña" required formControlName="pass">
+                <button type="submit" class="btn btn-primary btn-block btn-sm">Ingresar</button><br>
+            </form>
+        </div>
+</div>
+

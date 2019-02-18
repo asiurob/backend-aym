@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+body, html{
+    height: 100%;
+}
+
+body{
+    background-image: url("./assets/images/bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 0.9rem !important;
+    overflow-x: hidden;
+    min-height: 100%;
+}
+.bitActive {
+    color: #343a40 !important;
+    background-color: #f8f9fa;
+}
+
+.pointer { cursor: pointer; }
+
+.fs-01{ font-size: 0.1rem!important; }
+.fs-02{ font-size: 0.2rem!important; }
+.fs-03{ font-size: 0.3rem!important; }
+.fs-04{ font-size: 0.4rem!important; }
+.fs-05{ font-size: 0.5rem!important; }
+.fs-06{ font-size: 0.6rem!important; }
+.fs-07{ font-size: 0.7rem!important; }
+.fs-08{ font-size: 0.8rem!important; }
+.fs-09{ font-size: 0.9rem!important; }

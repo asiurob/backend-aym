@@ -1,0 +1,25 @@
+<div class="row" *ngIf="data">
+  <div class="col-md-4">
+    <h4 class="text-center text-muted">Información personal</h4><hr>
+    <label class="font-weight-bold">Nombre</label>
+    <input type="text" readonly class="form-control form-control-sm" [value]="data.NAME">
+    <label class="font-weight-bold">Apellidos</label>
+    <input type="text" readonly class="form-control form-control-sm" [value]="data.LASTNAME">
+  </div>
+  <div class="col-md-4">
+    <h4 class="text-center text-muted">Información laboral</h4><hr>
+    <label class="font-weight-bold">Usuario</label>
+    <input type="text" readonly class="form-control form-control-sm" [value]="data.USERNAME">
+    <label class="font-weight-bold">Correo electrónico</label>
+    <input type="text" readonly class="form-control form-control-sm" [value]="data.EMAIL">
+  </div>
+  <div class="col-md-4">
+    <img src="" class="rounded img256" [alt]="data.NAME">
+    <h5>Últimos accesos</h5>
+    <ul class="list-group text-center fs-07">
+      <li class="list-group-item p-1">{{ data.LOGIN_BACKLOG[ data.LOGIN_BACKLOG.length - 1].LAST_LOGIN | date:'long' }}</li>
+      <li class="list-group-item p-1">{{ data.LOGIN_BACKLOG[ data.LOGIN_BACKLOG.length - 2].LAST_LOGIN | date:'long' }}</li>
+      <li class="list-group-item p-1">{{ data.LOGIN_BACKLOG[ data.LOGIN_BACKLOG.length - 3].LAST_LOGIN | date:'long' }}</li>
+    </ul>
+  </div>
+</div>

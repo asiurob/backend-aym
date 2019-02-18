@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <a class="navbar-brand" href="#">
+      <img src="../../../../assets/images/logo.png" alt="EZ-CRM" width="90">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link  font-weight-bold" [routerLink]="['/account']" routerLinkActive="active" >Cuenta</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-danger font-weight-bold pointer" (click)="logout()">Salir</a>
+        </li>    
+      </ul>
+    </div>  
+  </nav>
